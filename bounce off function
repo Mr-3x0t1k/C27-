@@ -1,0 +1,23 @@
+      function bounceOff(gameObject1, gameObject2){
+      //when it touches
+       if (gameObject1.x - gameObject2.x < gameObject2.width/2 + gameObject1.width/2
+            && gameObject2.x - gameObject1.x < gameObject2.width/2 + gameObject1.width/2) {
+
+           // making it bounce
+          gameObject1.velocityX = -(gameObject1.velocityX)
+          gameObject1.velocityY = -(gameObject1.velocityY)
+
+        }if ( gameObject1.y - gameObject2.y < gameObject2.height/2 + gameObject1.height/2
+             && gameObject2.y - gameObject1.y < gameObject2.height/2 + gameObject1.height/2){
+             gameObject2.velocityX = -(gameObject2.velocityX)
+             gameObject2.velocityY = -(gameObject2.velocityY)
+
+        }
+
+
+      }
+
+
+this is a piece of code that will help you use the bounceOff function so that you can make 2
+sprites or objects collide with each other and make them bounce backwards, just remember to change
+gameObject1 and gameObject2 to the objects that you want
